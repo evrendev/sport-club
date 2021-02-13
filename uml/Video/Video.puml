@@ -1,0 +1,14 @@
+@startuml Class Diagram
+
+class Video  {
+    Language: Languages
+    Title: string
+    Image: string
+    Url: string
+    PublishDate: Datetime
+}
+
+Video <|-- FullBaseEntity: Inheritance
+Video <-- Languages 
+ 
+@enduml

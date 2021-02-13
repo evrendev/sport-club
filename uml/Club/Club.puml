@@ -1,0 +1,16 @@
+@startuml Class Diagram
+
+class Club  {
+    Team: Team
+    Branch: Branch
+    Title: string
+    Image: string
+    Games: Game[]
+}
+
+Club <|-- BaseEntity
+Club *-- Team
+Club *-- Branch
+Club *-- "many" Game
+ 
+@enduml

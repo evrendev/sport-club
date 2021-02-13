@@ -1,0 +1,41 @@
+@startuml Class Diagram
+
+class Branch  {
+    + BranchType: BranchType
+    + Category: Category
+    + Title : string
+    + Body : string
+    + Image : string
+    + PlayerPositions : PlayerPositions[]
+    + StaffPositions : StaffPositions[]
+    + Academies: Academy []
+    + Teams: Team[]
+    + Clubs: Club[]
+}
+
+Branch <|-- FullBaseEntity: Inheritance
+Branch <|-- BranchTypes
+Branch --|> "many" StaffPositions
+Branch --|> "many" PlayerPositions
+Branch "1" *-- "1" Category
+Branch o-- Academy
+Branch "1" o-- "many" Team
+Branch "1" o-- "many" Club
+
+note right of Branch::BranchType
+Branş Tipi Enum: Amatör, Profesyonel
+end note
+
+note right of Branch::Category
+Branş Haber kategorisi bağlantısı
+end note
+
+note right of Branch::PlayerPositions
+Branşa ait sporcuların oynadıkları mevkilerin listesi
+end note
+
+note right of Branch::StaffPositions
+Branşa ait teknik ekip ve personelin görev listesi
+end note
+ 
+@enduml

@@ -1,0 +1,8 @@
+@startuml Class Diagram
+
+enum Languages {
+    TURKCE
+    ENGLISH
+}
+ 
+@enduml

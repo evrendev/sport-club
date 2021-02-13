@@ -1,0 +1,16 @@
+@startuml Class Diagram
+
+enum PlayerPositions {
+    GOALKEEPER
+    DEFENDER
+    MIDFIELDERS
+    FORWARD
+    LEFTWING
+    RIGHTWING
+    LEFTPLAYMAKER
+    RIGHTPLAYMAKER
+    CENTERPLAYMAKER
+    PIVOT
+}
+ 
+@enduml

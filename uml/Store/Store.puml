@@ -1,0 +1,22 @@
+@startuml Class Diagram
+
+class Store {
+    + Title : string
+    + PhoneNumber : string
+    + Address : string
+    + CityId : int
+    + City : string
+    + District : string
+    + Location : string
+    + Lat : Number
+    + Lng : Number
+    + WeekdayOpenTime : string
+    + WeekdayCloseTime : string
+    + WeekendOpenTime : string
+    + WeekendCloseTime : string
+    + Image : string
+}
+
+Store --|> BaseEntity
+
+@enduml

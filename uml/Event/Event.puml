@@ -1,0 +1,12 @@
+@startuml Class Diagram
+class Event {
+    + Title : string
+    + Capacity : int
+    + Datetime : Datetime
+    + Fans: Fan[]
+}
+
+Event --|> BaseEntity
+Event o-- "many" Fan
+
+@enduml

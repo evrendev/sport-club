@@ -1,0 +1,11 @@
+@startuml Class Diagram
+
+class ShortUrl  {
+    Link: string
+    LongUrl: string
+    Special: bool
+}
+
+ShortUrl <|-- BaseEntity
+ 
+@enduml

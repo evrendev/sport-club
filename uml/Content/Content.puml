@@ -1,0 +1,13 @@
+@startuml Class Diagram
+class Content {
+    + Language : Languages
+    + ContentType : ContentTypes
+    + Title : string
+    + Image : string
+    + Body : string
+}
+
+Content --|> FullBaseEntity: Inheritance
+Content <-- Languages
+Content <-- ContentTypes
+@enduml

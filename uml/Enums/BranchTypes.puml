@@ -1,0 +1,8 @@
+@startuml Class Diagram
+
+enum BranchTypes {
+    PROFESSIONAL
+    AMATEUR
+}
+ 
+@enduml

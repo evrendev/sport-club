@@ -1,0 +1,30 @@
+@startuml Class Diagram
+
+abstract class BaseEntity {
+    + Id: Guid  
+    + DisplayOrder: int 
+    + CreationDatetime: Datetime
+    + Creator: string 
+    + ModificationDatetime: Datetime 
+    + Modifier: string 
+    + Deleted: bool 
+    + DeletionDatetime: Datetime 
+    + Deleter: string 
+    + Published: bool 
+
+    + create(): void
+    + delete(): void
+    + modify(): void
+    + publish(): void
+}
+
+abstract class FullBaseEntity {
+    + MetaTitle: string 
+    + MetaDescription: string 
+    + MetaKeywords: string[]
+    + SeoUrl: string
+}
+
+FullBaseEntity <|-- BaseEntity: Inheritance
+ 
+@enduml

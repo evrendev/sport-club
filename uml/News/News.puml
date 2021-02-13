@@ -1,0 +1,28 @@
+@startuml Class Diagram
+
+class News  {
+    + Category: Category
+    + Gallery: Gallery
+    + Title: string 
+    + Image: string 
+    + Body: string 
+    + Slide: bool 
+    + Constant: bool 
+    + PublishDatetime:Datetime 
+
+    + overview(length): string
+    + search(): News[]
+}
+
+News <|-- FullBaseEntity: Inheritance
+News "0" o-- Gallery
+
+note right of News::Category 
+ Haberin sadece <b>bir</b> kategorisi olabilir
+ end note
+
+note right of News::Gallery 
+Haber duruma göre <b>bir</b> adet galeri ile ilişkilendirilebilir
+end note
+ 
+@enduml

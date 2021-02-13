@@ -1,0 +1,17 @@
+@startuml Class Diagram
+
+class Gallery  {
+    Language: Languages
+    Title: string
+    Images: GalleryImage[]
+}
+
+note right of Gallery::Images 
+"Bir galeriye eklenebilecek maksimum görsel sayısı <b><u>20</u></b> olacak"
+end note
+
+Gallery <|-- FullBaseEntity: Inheritance
+Gallery <-- Languages 
+Gallery "1" *-- "many" GalleryImage
+ 
+@enduml

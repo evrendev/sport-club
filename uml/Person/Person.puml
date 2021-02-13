@@ -1,0 +1,17 @@
+@startuml Class Diagram
+
+class Person  {
+    Team: Team
+    PersonType: PersoneTypes
+    Position: PlayerPositions
+    Name: string
+    Number: int
+    Nationality: string
+    Image: string
+    Homepage: bool
+}
+
+Person <|-- FullBaseEntity: Inheritance
+Person --> PersonTypes
+
+@enduml

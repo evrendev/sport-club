@@ -1,0 +1,8 @@
+@startuml Class Diagram
+
+enum ContentTypes {
+    BRANCH
+    CONTENT
+}
+ 
+@enduml

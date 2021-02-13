@@ -1,0 +1,8 @@
+@startuml Class Diagram
+
+enum PersonTypes {
+    PLAYER
+    STAFF
+}
+ 
+@enduml

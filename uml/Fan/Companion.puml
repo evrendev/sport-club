@@ -1,0 +1,12 @@
+@startuml Class Diagram
+class Companion {
+    + FullName : string
+    + PhoneNumber : string
+    + Tckn : string
+    + Fan: Fan
+}
+
+Companion --|> BaseEntity
+Companion "1" *-- "1" Fan
+
+@enduml

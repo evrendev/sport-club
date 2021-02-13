@@ -1,0 +1,20 @@
+@startuml Class Diagram
+
+class Category  {
+    + Language: Languages
+    + Title: string 
+    + Image: string
+    + News : News[] 
+
+    + search(): Category[]
+}
+
+Category <|-- BaseEntity
+Category <-- Languages
+Category "1" -- "many" News
+
+note left of Category::News 
+Kategoriye ait haberler
+end note
+ 
+@enduml

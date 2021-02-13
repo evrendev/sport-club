@@ -1,0 +1,8 @@
+@startuml Class Diagram
+
+enum TeamTypes {
+    ATEAM
+    YOUTH
+}
+ 
+@enduml

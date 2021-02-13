@@ -1,0 +1,19 @@
+@startuml Class Diagram
+
+class Academy   {
+    + Branch: Branch
+    + Title : string
+    + PhoneNumber : string
+    + Address : string
+    + Country : string
+    + City : string
+    + District : string
+    + Location : string
+    + Lat : Number
+    + Lng : Number
+}
+
+Academy <|-- FullBaseEntity: Inheritance
+Academy "1" *-- "1" Branch : Composition
+ 
+@enduml

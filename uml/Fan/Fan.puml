@@ -1,0 +1,16 @@
+@startuml Class Diagram
+class Fan {
+    + FullName : string
+    + PhoneNumber : string
+    + Tckn : string
+    + companion: bool
+    + wheelchair: bool
+    + Events: Event[]
+    + Companion: Companion
+}
+
+Fan --|> BaseEntity
+Fan *-- "many" Event
+Fan *--Companion
+
+@enduml

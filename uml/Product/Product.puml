@@ -1,0 +1,12 @@
+@startuml Class Diagram
+
+class Product {
+    + Title : string
+    + Image : string
+    + Url : string
+    + Price : Number
+}
+
+Product --|> BaseEntity
+
+@enduml

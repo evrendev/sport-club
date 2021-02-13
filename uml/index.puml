@@ -1,0 +1,33 @@
+@startuml Class Diagram
+
+title Sport Club Class Diagram
+skinparam Style strictuml
+skinparam SequenceMessageAlignment center
+
+!include ./Shared/Shared.puml
+!include ./Enums/Languages.puml
+!include ./Enums/BranchTypes.puml
+!include ./Enums/PersonTypes.puml
+!include ./Enums/PlayerPositions.puml
+!include ./Enums/StaffPositions.puml
+!include ./Enums/TeamTypes.puml
+
+!include ./Academy/Academy.puml
+!include ./Branch/Branch.puml
+!include ./Club/Club.puml
+!include ./Content/Content.puml
+!include ./Event/Event.puml
+!include ./Fan/Fan.puml
+!include ./Fan/Companion.puml
+!include ./Gallery/Gallery.puml
+!include ./Gallery/GalleryImage.puml
+!include ./News/Category.puml
+!include ./News/News.puml
+!include ./Person/Person.puml
+!include ./Product/Product.puml
+!include ./ShortUrl/ShortUrl.puml
+!include ./Store/Store.puml
+!include ./Team/Team.puml
+!include ./Video/Video.puml
+
+@enduml
