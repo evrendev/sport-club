@@ -1,15 +1,16 @@
-@startuml Class Diagram
+@startuml Team Class Diagram
 
 class Team  {
-    TeamType: TeamType
-    Branch: Branch
-    Title: string
-    Image: string
-    Homepage: bool
-    Persons: Person[]
+    + TeamType: TeamType
+    + Branch: Branch
+    + Title: string
+    + Image: string
+    + Homepage: bool
+    + Persons: Person[]
 }
 
 Team <|-- FullBaseEntity: Inheritance
-Team *-- "many" Person
+Team *-- "many" Person: Composition
 Team --> TeamTypes
+
 @enduml

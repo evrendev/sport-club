@@ -1,19 +1,22 @@
-@startuml Class Diagram
+@startuml Academy Class Diagram
 
 class Academy   {
     + Branch: Branch
     + Title : string
-    + PhoneNumber : string
-    + Address : string
+    + Phone : string
+    + AddressLine1 : string
+    + AddressLine2: string
     + Country : string
     + City : string
-    + District : string
-    + Location : string
+    + Region : string
+    + State: string
+    + PostalCode: Number
     + Lat : Number
     + Lng : Number
+
+    + Search(): Academy[]
 }
 
 Academy <|-- FullBaseEntity: Inheritance
-Academy "1" *-- "1" Branch : Composition
  
 @enduml

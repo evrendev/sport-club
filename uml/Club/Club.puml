@@ -1,16 +1,12 @@
-@startuml Class Diagram
+@startuml Club Class Diagram
 
 class Club  {
-    Team: Team
-    Branch: Branch
-    Title: string
-    Image: string
-    Games: Game[]
+    + Title: string
+    + Image: string
+    + Games
 }
 
-Club <|-- BaseEntity
-Club *-- Team
-Club *-- Branch
-Club *-- "many" Game
+Club <|-- BaseEntity: Inheritance
+Club *-- "many" Game: Composition
  
 @enduml

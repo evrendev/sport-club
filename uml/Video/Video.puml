@@ -1,11 +1,13 @@
 @startuml Class Diagram
 
 class Video  {
-    Language: Languages
-    Title: string
-    Image: string
-    Url: string
-    PublishDate: Datetime
+    + Language: Languages
+    + Title: string
+    + Image: string
+    + Url: string
+    + PublishDate: Datetime
+
+    +Search: Video[]
 }
 
 Video <|-- FullBaseEntity: Inheritance

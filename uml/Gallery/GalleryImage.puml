@@ -1,11 +1,11 @@
-@startuml Class Diagram
+@startuml Gallery Image Class Diagram
 
 class GalleryImage  {
-    Gallery: Gallery
-    FileName: string
-    Favorite: bool
+    + Gallery: Gallery
+    + FileName: string
+    + Favorite: bool
 }
 
-GalleryImage <|-- BaseEntity
+GalleryImage <|-- BaseEntity: Inheritance
  
 @enduml

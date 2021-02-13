@@ -1,4 +1,4 @@
-@startuml Class Diagram
+@startuml Language Enums
 
 enum Languages {
     TURKCE

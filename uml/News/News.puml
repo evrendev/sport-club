@@ -1,4 +1,4 @@
-@startuml Class Diagram
+@startuml News Class Diagram
 
 class News  {
     + Category: Category
@@ -10,12 +10,12 @@ class News  {
     + Constant: bool 
     + PublishDatetime:Datetime 
 
-    + overview(length): string
+    + createOverview(length): string
     + search(): News[]
 }
 
 News <|-- FullBaseEntity: Inheritance
-News "0" o-- Gallery
+News "0" o-- "1" Gallery: Aggregation
 
 note right of News::Category 
  Haberin sadece <b>bir</b> kategorisi olabilir

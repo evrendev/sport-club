@@ -1,4 +1,4 @@
-@startuml Class Diagram
+@startuml Category Class Diagram
 
 class Category  {
     + Language: Languages
@@ -9,9 +9,9 @@ class Category  {
     + search(): Category[]
 }
 
-Category <|-- BaseEntity
+Category <|-- BaseEntity: Inheritance
 Category <-- Languages
-Category "1" -- "many" News
+Category "1" -- "many" News: Composition
 
 note left of Category::News 
 Kategoriye ait haberler

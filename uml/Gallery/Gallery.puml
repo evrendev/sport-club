@@ -1,9 +1,11 @@
-@startuml Class Diagram
+@startuml Gallery Class Diagram
 
 class Gallery  {
-    Language: Languages
-    Title: string
-    Images: GalleryImage[]
+    + Language: Languages
+    + Title: string
+    + Images: GalleryImage[]
+
+    + Search: Gallery[]
 }
 
 note right of Gallery::Images 
@@ -12,6 +14,6 @@ end note
 
 Gallery <|-- FullBaseEntity: Inheritance
 Gallery <-- Languages 
-Gallery "1" *-- "many" GalleryImage
+Gallery "1" *-- "many" GalleryImage: Composition
  
 @enduml

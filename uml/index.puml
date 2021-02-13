@@ -1,7 +1,7 @@
 @startuml Class Diagram
 
 title Sport Club Class Diagram
-skinparam Style strictuml
+
 skinparam SequenceMessageAlignment center
 
 !include ./Shared/Shared.puml

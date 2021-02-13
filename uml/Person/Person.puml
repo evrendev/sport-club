@@ -1,17 +1,20 @@
-@startuml Class Diagram
+@startuml Person Class Diagram
 
 class Person  {
-    Team: Team
-    PersonType: PersoneTypes
-    Position: PlayerPositions
-    Name: string
-    Number: int
-    Nationality: string
-    Image: string
-    Homepage: bool
+    + Team: Team
+    + PersonType: PersonTypes
+    + Position: PlayerPositions
+    + Name: string
+    + Number: int
+    + Nationality: string
+    + Image: string
+    + Homepage: bool
+
+    + Search: Person[]
 }
 
 Person <|-- FullBaseEntity: Inheritance
 Person --> PersonTypes
+Person "1" o-- "many" Team : Aggreagation
 
 @enduml

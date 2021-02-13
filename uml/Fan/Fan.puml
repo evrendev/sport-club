@@ -1,4 +1,5 @@
-@startuml Class Diagram
+@startuml Fan Class Diagram
+
 class Fan {
     + FullName : string
     + PhoneNumber : string
@@ -9,8 +10,8 @@ class Fan {
     + Companion: Companion
 }
 
-Fan --|> BaseEntity
-Fan *-- "many" Event
-Fan *--Companion
+Fan --|> BaseEntity: Inheritance
+Fan "many" o-- "many" Event: Aggregation
+Fan "1" *-- "0" Companion: Composition
 
 @enduml

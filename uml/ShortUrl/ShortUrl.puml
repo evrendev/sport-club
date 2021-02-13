@@ -1,11 +1,14 @@
-@startuml Class Diagram
+@startuml ShortUrl Class Diagram
 
 class ShortUrl  {
-    Link: string
-    LongUrl: string
-    Special: bool
+    + Link: string
+    + LongUrl: string
+    + Special: bool
+
+    + Find: ShortUrl
+
 }
 
-ShortUrl <|-- BaseEntity
+ShortUrl <|-- BaseEntity: Inheritance
  
 @enduml

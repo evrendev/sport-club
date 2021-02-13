@@ -1,4 +1,4 @@
-@startuml Class Diagram
+@startuml Store Class Diagram
 
 class Store {
     + Title : string
@@ -15,8 +15,11 @@ class Store {
     + WeekendOpenTime : string
     + WeekendCloseTime : string
     + Image : string
+
+    + GetAddress(): Store
+    + Search: Store[]
 }
 
-Store --|> BaseEntity
+Store --|> BaseEntity: Inheritance
 
 @enduml
