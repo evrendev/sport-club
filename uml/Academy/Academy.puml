@@ -2,17 +2,17 @@
 
 class Academy   {
     + Branch: Branch
-    + Title : string
-    + Phone : string
-    + AddressLine1 : string
+    + Title: string
+    + Phone: string
+    + AddressLine1: string
     + AddressLine2: string
-    + Country : string
-    + City : string
-    + Region : string
+    + Country: string
+    + City: string
+    + Region: string
     + State: string
     + PostalCode: Number
-    + Lat : Number
-    + Lng : Number
+    + Lat: Number
+    + Lng: Number
 
     + Search(): Academy[]
 }

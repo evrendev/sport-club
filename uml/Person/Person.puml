@@ -15,6 +15,6 @@ class Person  {
 
 Person <|-- FullBaseEntity: Inheritance
 Person --> PersonTypes
-Person "1" o-- "many" Team : Aggreagation
+Person "1" o-- "many" Team: Aggreagation
 
 @enduml

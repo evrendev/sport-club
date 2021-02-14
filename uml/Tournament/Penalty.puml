@@ -1,0 +1,12 @@
+@startuml Penalty Class Diagram
+
+class Penalty {
+    + Phase: Phase
+    + Club: Club
+    + Point: int
+}
+
+Penalty --|> BaseEntity: Inheritance
+Penalty "1" o-- "1" Club: Composition
+
+@enduml

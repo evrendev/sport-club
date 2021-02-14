@@ -1,0 +1,13 @@
+@startuml Rule Class Diagram
+
+class Rule {
+    + Phase: Phase
+    + Standing: int
+    + Title: string
+    + Description: string
+    + Color: string
+}
+
+Rule --|> BaseEntity: Inheritance
+
+@enduml

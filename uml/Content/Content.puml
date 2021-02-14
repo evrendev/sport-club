@@ -1,10 +1,10 @@
 @startuml Content Class Diagram
 
 class Content {
-    + Language : Languages
-    + Title : string
-    + Image : string
-    + Body : string
+    + Language: Languages
+    + Title: string
+    + Image: string
+    + Body: string
 
     + Search(): Content[]
 }

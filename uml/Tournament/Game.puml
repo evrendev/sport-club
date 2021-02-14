@@ -1,0 +1,11 @@
+@startuml Game Class Diagram
+
+class Game {
+    + Phase: Phase
+    + Start: Datetime
+    + End: Datetime
+}
+
+Game --|> BaseEntity: Inheritance
+
+@enduml

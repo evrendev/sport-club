@@ -1,0 +1,9 @@
+@startuml Game Status Enums
+
+enum GameStatuses {
+    PLAYED
+    DELAYED
+    CANCELED
+}
+ 
+@enduml

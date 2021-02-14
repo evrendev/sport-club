@@ -4,7 +4,7 @@ class Category  {
     + Language: Languages
     + Title: string 
     + Image: string
-    + News : News[] 
+    + News: News[] 
 
     + search(): Category[]
 }

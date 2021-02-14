@@ -1,12 +1,12 @@
 @startuml Product Class Diagram
 
 class Product {
-    + Title : string
-    + Image : string
-    + Url : string
-    + Price : Number
+    + Title: string
+    + Image: string
+    + Url: string
+    + Price: Number
 
-    +Search: Product[]
+    + Search: Product[]
 }
 
 Product --|> BaseEntity: Inheritance

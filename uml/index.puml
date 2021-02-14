@@ -5,8 +5,8 @@ title Sport Club Class Diagram
 skinparam SequenceMessageAlignment center
 
 !include ./Shared/Shared.puml
-!include ./Enums/Languages.puml
 !include ./Enums/BranchTypes.puml
+!include ./Enums/Languages.puml
 !include ./Enums/PersonTypes.puml
 !include ./Enums/PlayerPositions.puml
 !include ./Enums/StaffPositions.puml
@@ -28,6 +28,11 @@ skinparam SequenceMessageAlignment center
 !include ./ShortUrl/ShortUrl.puml
 !include ./Store/Store.puml
 !include ./Team/Team.puml
+!include ./Tournament/Game.puml
+!include ./Tournament/Penalty.puml
+!include ./Tournament/Phase.puml
+!include ./Tournament/Rule.puml
+!include ./Tournament/Tournament.puml
 !include ./Video/Video.puml
 
 @enduml

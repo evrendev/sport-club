@@ -1,0 +1,19 @@
+@startuml Phase Class Diagram
+
+class Phase {
+    + Tournament: Tournament
+    + Level: int
+    + WonPoint: int
+    + DrawPoint: int
+    + LosePoint: int
+    + Games: Game[]
+    + Rules: Rule[]
+    + Penalties: Penalty[]
+}
+
+Phase --|> BaseEntity: Inheritance
+Phase "1" o-- "many" Game: Composition
+Phase "1" o-- "many" Rule: Composition
+Phase "1" o-- "many" Penalty: Composition
+
+@enduml

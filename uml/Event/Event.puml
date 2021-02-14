@@ -1,9 +1,9 @@
 @startuml Event Class Diagram
 
 class Event {
-    + Title : string
-    + Capacity : int
-    + Datetime : Datetime
+    + Title: string
+    + Capacity: int
+    + Datetime: Datetime
     + Fans: Fan[]
 }
 

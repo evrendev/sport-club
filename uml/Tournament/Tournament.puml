@@ -1,0 +1,17 @@
+@startuml Tournament Class Diagram
+
+class Tournament {
+    + Team: Team
+    + Title: string
+    + Image: string
+    + Favorite: bool
+    + Phases: Phase[]
+
+    + Search: Tournament[]
+}
+
+Tournament --|> BaseEntity: Inheritance
+Tournament "1" o-- "1" Team: Composition
+Tournament "1" o-- "many" Phase: Composition
+
+@enduml
