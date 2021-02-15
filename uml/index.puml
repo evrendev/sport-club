@@ -6,6 +6,7 @@ skinparam SequenceMessageAlignment center
 
 !include ./Shared/Shared.puml
 !include ./Enums/BranchTypes.puml
+!include ./Enums/GameStatuses.puml
 !include ./Enums/Languages.puml
 !include ./Enums/PersonTypes.puml
 !include ./Enums/PlayerPositions.puml

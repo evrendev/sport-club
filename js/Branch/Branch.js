@@ -1,5 +1,5 @@
-const Academy = require("../Academy/Academy
-const Team = require("./team");
+const Academy = require("../Academy/app");
+const Team = require("../Team/team");
 
 class Branch {
     constructor(branchType, category, title, description, image, playerPositions, staffPositions) {

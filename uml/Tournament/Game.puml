@@ -18,7 +18,7 @@ class Game {
 Game --|> BaseEntity: Inheritance
 Game "1" o-- "1" Club: Assosication
 Game "1" o-- "1" Club: Assosication
-Game --|> GameStatuses
+Game <-- GameStatuses
 
 note right of Game::Url
 Bilet satış url
