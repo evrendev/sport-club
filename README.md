@@ -27,4 +27,4 @@ Proje Futbol, Basketbol, Voleybol ve Hentbol kulüplerini hedef alarak, bunları
 
 ## UML Diagram
 
-![UML Diagram](https://evren.dev/svg/diagram.svg)
+![UML Diagram](./resource/uml/__WorkspaceFolder__/uml/Class%20Diagram.svg)
