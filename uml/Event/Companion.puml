@@ -1,8 +1,8 @@
 @startuml Companion Class Diagram
 
 class Companion {
-    + FullName: string
-    + PhoneNumber: string
+    + Name: string
+    + Phone: string
     + Tckn: string
     + Fan: Fan
 }

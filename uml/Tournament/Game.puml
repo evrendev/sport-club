@@ -4,8 +4,24 @@ class Game {
     + Phase: Phase
     + Start: Datetime
     + End: Datetime
+    + Arena: string
+    + HomeTeam: Club
+    + AwayTeam: Club
+    + HomeScore: int
+    + AwayScore: int
+    + Referee: string
+    + Status: GameStatuses
+    + Url: string
+    + Note: string
 }
 
 Game --|> BaseEntity: Inheritance
+Game "1" o-- "1" Club: Assosication
+Game "1" o-- "1" Club: Assosication
+Game --|> GameStatuses
+
+note right of Game::Url
+Bilet satış url
+end note
 
 @enduml

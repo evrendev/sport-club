@@ -6,15 +6,21 @@ class Phase {
     + WonPoint: int
     + DrawPoint: int
     + LosePoint: int
+    + Clubs: Club[]
     + Games: Game[]
     + Rules: Rule[]
     + Penalties: Penalty[]
 }
 
 Phase --|> BaseEntity: Inheritance
+Phase "1" o-- "many" Club: Composition
 Phase "1" o-- "many" Game: Composition
 Phase "1" o-- "many" Rule: Composition
 Phase "1" o-- "many" Penalty: Composition
+
+note right of Phase::Clubs
+Aşamada yer alan kulüplerin listesi
+end note
 
 note right of Phase::Games
 Aşamaya ait maç listesi

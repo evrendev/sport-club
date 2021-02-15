@@ -5,7 +5,7 @@ class News  {
     + Gallery: Gallery
     + Title: string 
     + Image: string 
-    + Body: string 
+    + Description: string 
     + Slide: bool 
     + Constant: bool 
     + PublishDatetime:Datetime 

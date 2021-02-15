@@ -1,10 +1,10 @@
 @startuml Fan Class Diagram
 
 class Fan {
-    + FullName: string
-    + PhoneNumber: string
+    + Name: string
+    + Phone: string
     + Tckn: string
-    + companion: bool
+    + HasCompanion: bool
     + wheelchair: bool
     + Events: Event[]
     + Companion: Companion

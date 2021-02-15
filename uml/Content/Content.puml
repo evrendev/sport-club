@@ -4,9 +4,9 @@ class Content {
     + Language: Languages
     + Title: string
     + Image: string
-    + Body: string
+    + Description: string
 
-    + Search(): Content[]
+    + Filter(): Content[]
 }
 
 Content --|> FullBaseEntity: Inheritance

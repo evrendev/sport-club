@@ -4,14 +4,14 @@ class Branch  {
     + BranchType: BranchType
     + Category: Category
     + Title: string
-    + Body: string
+    + Description: string
     + Image: string
     + PlayerPositions: PlayerPositions[]
     + StaffPositions: StaffPositions[]
     + Academies: Academy []
     + Teams: Team[]
 
-    + Search(): Branch[]
+    + Filter(): Branch[]
 }
 
 Branch <|-- FullBaseEntity: Inheritance

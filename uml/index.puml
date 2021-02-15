@@ -14,20 +14,20 @@ skinparam SequenceMessageAlignment center
 
 !include ./Academy/Academy.puml
 !include ./Branch/Branch.puml
-!include ./Club/Club.puml
 !include ./Content/Content.puml
 !include ./Event/Event.puml
-!include ./Fan/Fan.puml
-!include ./Fan/Companion.puml
+!include ./Event/Fan.puml
+!include ./Event/Companion.puml
 !include ./Gallery/Gallery.puml
-!include ./Gallery/GalleryImage.puml
+!include ./Gallery/Image.puml
 !include ./News/Category.puml
 !include ./News/News.puml
-!include ./Person/Person.puml
 !include ./Product/Product.puml
 !include ./ShortUrl/ShortUrl.puml
 !include ./Store/Store.puml
+!include ./Team/Person.puml
 !include ./Team/Team.puml
+!include ./Tournament/Club.puml
 !include ./Tournament/Game.puml
 !include ./Tournament/Penalty.puml
 !include ./Tournament/Phase.puml

@@ -14,7 +14,7 @@ class Academy   {
     + Lat: Number
     + Lng: Number
 
-    + Search(): Academy[]
+    + Filter(): Academy[]
 }
 
 Academy <|-- FullBaseEntity: Inheritance

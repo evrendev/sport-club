@@ -10,7 +10,7 @@ class Person  {
     + Image: string
     + Homepage: bool
 
-    + Search: Person[]
+    + Filter: Person[]
 }
 
 Person <|-- FullBaseEntity: Inheritance

@@ -7,7 +7,7 @@ class Tournament {
     + Favorite: bool
     + Phases: Phase[]
 
-    + Search: Tournament[]
+    + Filter: Tournament[]
 }
 
 Tournament --|> BaseEntity: Inheritance

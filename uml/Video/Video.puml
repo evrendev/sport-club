@@ -7,7 +7,7 @@ class Video  {
     + Url: string
     + PublishDate: Datetime
 
-    + Search: Video[]
+    + Filter: Video[]
 }
 
 Video <|-- FullBaseEntity: Inheritance

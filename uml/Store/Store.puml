@@ -2,12 +2,14 @@
 
 class Store {
     + Title: string
-    + PhoneNumber: string
-    + Address: string
-    + CityId: int
+    + Phone: string
+    + AddressLine1: string
+    + AddressLine2: string
+    + Country: string
     + City: string
-    + District: string
-    + Location: string
+    + Region: string
+    + State: string
+    + PostalCode: Number
     + Lat: Number
     + Lng: Number
     + WeekdayOpenTime: string
@@ -17,7 +19,7 @@ class Store {
     + Image: string
 
     + GetAddress(): Store
-    + Search: Store[]
+    + Filter: Store[]
 }
 
 Store --|> BaseEntity: Inheritance

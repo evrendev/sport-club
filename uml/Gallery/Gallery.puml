@@ -3,9 +3,9 @@
 class Gallery  {
     + Language: Languages
     + Title: string
-    + Images: GalleryImage[]
+    + Images: Image[]
 
-    + Search: Gallery[]
+    + Filter: Gallery[]
 }
 
 note right of Gallery::Images 
@@ -14,6 +14,6 @@ end note
 
 Gallery <|-- FullBaseEntity: Inheritance
 Gallery <-- Languages 
-Gallery "1" *-- "many" GalleryImage: Composition
+Gallery "1" *-- "many" Image: Composition
  
 @enduml
