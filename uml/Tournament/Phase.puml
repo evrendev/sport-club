@@ -16,4 +16,16 @@ Phase "1" o-- "many" Game: Composition
 Phase "1" o-- "many" Rule: Composition
 Phase "1" o-- "many" Penalty: Composition
 
+note right of Phase::Games
+Aşamaya ait maç listesi
+end note
+
+note right of Phase::Rules
+Aşamaya ait kural listesi
+end note
+
+note right of Phase::Penalty
+Aşamaya ait cezalı kulüp listesi
+end note
+
 @enduml

@@ -14,4 +14,8 @@ Tournament --|> BaseEntity: Inheritance
 Tournament "1" o-- "1" Team: Composition
 Tournament "1" o-- "many" Phase: Composition
 
+note right of Tournament::Phases
+Turnuvanın aşamaları
+end note
+
 @enduml
