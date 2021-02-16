@@ -6,6 +6,7 @@ class Gallery  {
     + Images: Image[]
 
     + Filter: Gallery[]
+    + AddImage(): Image
 }
 
 note right of Gallery::Images 

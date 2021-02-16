@@ -8,7 +8,7 @@ class Tournament {
         this.phases = []
     }
 
-    addPhases(phase, start, end) {
+    addPhase(phase, start, end) {
         const phase = new Phase(phase, start, end);
 
         this.phases.push(phase);

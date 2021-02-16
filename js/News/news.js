@@ -30,7 +30,6 @@ class News {
     setConstant() {
         this.constant = !this.constant;
     }
-
 };
 
 module.exports = News;

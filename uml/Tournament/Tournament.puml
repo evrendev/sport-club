@@ -8,6 +8,8 @@ class Tournament {
     + Phases: Phase[]
 
     + Filter: Tournament[]
+    + AddPhase(): Phase
+    + SetFavorite()
 }
 
 Tournament --|> BaseEntity: Inheritance

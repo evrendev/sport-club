@@ -5,6 +5,8 @@ class Event {
     + Capacity: int
     + Datetime: Datetime
     + Fans: Fan[]
+
+    + MakeReservation(): Fan
 }
 
 Event --|> BaseEntity: Inheritance

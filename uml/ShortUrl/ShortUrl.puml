@@ -10,5 +10,8 @@ class ShortUrl  {
 }
 
 ShortUrl <|-- BaseEntity: Inheritance
+
+note top of ShortUrl: Bit.ly api kullanılarak kısa url oluşturulacak. Özel url istenirse api kullanılmadan uzantı verilecek.
+
  
 @enduml

@@ -7,10 +7,20 @@ class Team  {
     + Image: string
     + Homepage: bool
     + Persons: Person[]
+
+    + AddPerson(): Person
 }
 
 Team <|-- FullBaseEntity: Inheritance
 Team *-- "many" Person: Composition
 Team --> TeamTypes
+
+note right of Team::Homepage
+Takımı Anasayfada görüntüle
+end note
+
+note right of Team::Persons
+Takıma ait sporcu ve teknik ekip listesi
+end note
 
 @enduml

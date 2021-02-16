@@ -8,6 +8,8 @@ class Fan {
     + wheelchair: bool
     + Events: Event[]
     + Companion: Companion
+
+    + AddCompanion(): Companion
 }
 
 Fan --|> BaseEntity: Inheritance

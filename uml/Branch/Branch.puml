@@ -12,6 +12,8 @@ class Branch  {
     + Teams: Team[]
 
     + Filter(): Branch[]
+    + AddAcademy(): Academy
+    + AddTeam(): Team
 }
 
 Branch <|-- FullBaseEntity: Inheritance

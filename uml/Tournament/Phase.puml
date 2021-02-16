@@ -18,6 +18,10 @@ Phase "1" o-- "many" Game: Composition
 Phase "1" o-- "many" Rule: Composition
 Phase "1" o-- "many" Penalty: Composition
 
+note right of Phase::Level
+Aynı seviyede yer alan aşamalar grup olarak nitelendirilir
+end note
+
 note right of Phase::Clubs
 Aşamada yer alan kulüplerin listesi
 end note

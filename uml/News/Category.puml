@@ -6,7 +6,8 @@ class Category  {
     + Image: string
     + News: News[] 
 
-    + search(): Category[]
+    + Filter(): Category[]
+    + AddNews(): News
 }
 
 Category <|-- BaseEntity: Inheritance

@@ -10,8 +10,11 @@ class News  {
     + Constant: bool 
     + PublishDatetime:Datetime 
 
-    + createOverview(length): string
-    + search(): News[]
+    + Filter(): News[]
+    + AddGallery()
+    + SetPublishDate()
+    + SetSlide()
+    + SetConstant()
 }
 
 News <|-- FullBaseEntity: Inheritance
@@ -23,6 +26,14 @@ note right of News::Category
 
 note right of News::Gallery 
 Haber duruma göre <b>bir</b> adet galeri ile ilişkilendirilebilir
+end note
+
+note right of News::Slide
+Haber slide içinde yer alsın
+end note
+
+note right of News::Constant
+Haber sabit olarak kalsın
 end note
  
 @enduml

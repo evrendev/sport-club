@@ -22,7 +22,7 @@ class Branch {
         return academy;
     }
 
-    addTeams(teamType, title, image, homepage, persons) {
+    addTeam(teamType, title, image, homepage, persons) {
         const team = new Team(teamType, title, image, homepage, persons);
 
         this.teams.push(team);
